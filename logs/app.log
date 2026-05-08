@@ -340,3 +340,43 @@ __root__
 2026-05-07 14:47:04 - agents.orchestrator - INFO - Orchestrator received query: tell me about pantry
 2026-05-07 14:47:04 - agents.router - INFO - No specific keywords matched for query: 'tell me about pantry'. Defaulting to Analyst Agent.
 2026-05-07 14:47:04 - agents.orchestrator - INFO - Query routed to: analyst_agent
+2026-05-08 14:07:21 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-08 14:07:21 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-08 14:07:21 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-08 14:07:21 - agents.analyst_agent - WARNING - Failed to initialize ChatGroq in AnalystAgent: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-08 14:07:21 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-08 14:07:21 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-08 14:08:22 - rag.rag_pipeline - WARNING - Could not initialize ChatGroq. Ensure GROQ_API_KEY is set. Error: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-08 14:08:22 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-08 14:08:23 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-08 14:08:23 - ml.predict - INFO - Loading trained models...
+2026-05-08 14:08:23 - ml.predict - INFO - Models loaded successfully.
+2026-05-08 14:08:23 - agents.ml_agent - WARNING - Failed to initialize ChatGroq in MLAgent: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-08 14:08:23 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-08 14:08:23 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-08 14:08:37 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-08 14:08:37 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-08 14:08:37 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-08 14:08:37 - agents.analyst_agent - WARNING - Failed to initialize ChatGroq in AnalystAgent: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-08 14:08:37 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-08 14:08:37 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-08 14:08:52 - rag.rag_pipeline - WARNING - Could not initialize ChatGroq. Ensure GROQ_API_KEY is set. Error: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-08 14:08:52 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-08 14:08:52 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-08 14:08:52 - ml.predict - INFO - Loading trained models...
+2026-05-08 14:08:52 - ml.predict - INFO - Models loaded successfully.
+2026-05-08 14:08:52 - agents.ml_agent - WARNING - Failed to initialize ChatGroq in MLAgent: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-08 14:08:52 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-08 14:08:52 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
