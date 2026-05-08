@@ -1,0 +1,342 @@
+2026-05-06 15:42:17 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-06 15:42:17 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-06 15:42:17 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-06 15:42:32 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-06 15:42:32 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-06 15:42:35 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-06 15:42:35 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-06 15:42:35 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-06 15:42:35 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-06 15:42:35 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-06 15:42:47 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-06 15:42:47 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-06 15:42:47 - ml.predict - INFO - Loading trained models...
+2026-05-06 15:42:47 - ml.predict - INFO - Models loaded successfully.
+2026-05-06 15:42:47 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-06 15:42:47 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-06 15:59:51 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-06 15:59:51 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-06 15:59:51 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-06 15:59:51 - agents.analyst_agent - WARNING - Failed to initialize ChatGroq in AnalystAgent: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-06 15:59:51 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-06 15:59:51 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-06 16:00:04 - rag.rag_pipeline - WARNING - Could not initialize ChatGroq. Ensure GROQ_API_KEY is set. Error: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-06 16:00:04 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-06 16:00:04 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-06 16:00:04 - ml.predict - INFO - Loading trained models...
+2026-05-06 16:00:04 - ml.predict - INFO - Models loaded successfully.
+2026-05-06 16:00:04 - agents.ml_agent - WARNING - Failed to initialize ChatGroq in MLAgent: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-06 16:00:04 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-06 16:00:04 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-06 16:00:04 - backend.routes.api - INFO - API called: /anomaly - Anomaly detection executed. Found 121 anomalies.
+2026-05-06 16:00:04 - backend.routes.api - INFO - API called: /ask - Received query: 'Which store had the highest sales performance?'
+2026-05-06 16:00:04 - agents.orchestrator - INFO - Orchestrator received query: Which store had the highest sales performance?
+2026-05-06 16:00:04 - agents.orchestrator - INFO - Query routed to: analyst_agent
+2026-05-06 16:00:04 - backend.routes.api - INFO - API called: /ask - Received query: 'Tell me about dairy products like milk.'
+2026-05-06 16:00:04 - agents.orchestrator - INFO - Orchestrator received query: Tell me about dairy products like milk.
+2026-05-06 16:00:04 - agents.orchestrator - INFO - Query routed to: rag_agent
+2026-05-06 16:00:04 - backend.routes.api - INFO - API called: /ask - Received query: 'Predict weekly sales for store 2'
+2026-05-06 16:00:04 - agents.orchestrator - INFO - Orchestrator received query: Predict weekly sales for store 2
+2026-05-06 16:00:04 - agents.orchestrator - INFO - Query routed to: ml_agent
+2026-05-06 16:00:04 - backend.routes.api - INFO - API called: /predict - Prediction generated: 1594429.9503999993
+2026-05-06 16:00:24 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-06 16:00:24 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-06 16:00:24 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-06 16:00:24 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-06 16:00:24 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-06 16:00:35 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-06 16:00:35 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-06 16:00:35 - ml.predict - INFO - Loading trained models...
+2026-05-06 16:00:36 - ml.predict - INFO - Models loaded successfully.
+2026-05-06 16:00:36 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-06 16:00:36 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-06 16:00:36 - backend.routes.api - INFO - API called: /anomaly - Anomaly detection executed. Found 121 anomalies.
+2026-05-06 16:00:36 - backend.routes.api - INFO - API called: /ask - Received query: 'Which store had the highest sales performance?'
+2026-05-06 16:00:36 - agents.orchestrator - INFO - Orchestrator received query: Which store had the highest sales performance?
+2026-05-06 16:00:36 - agents.orchestrator - INFO - Query routed to: analyst_agent
+2026-05-06 16:00:36 - backend.routes.api - INFO - API called: /ask - Received query: 'Tell me about dairy products like milk.'
+2026-05-06 16:00:36 - agents.orchestrator - INFO - Orchestrator received query: Tell me about dairy products like milk.
+2026-05-06 16:00:36 - agents.orchestrator - INFO - Query routed to: rag_agent
+2026-05-06 16:00:36 - rag.rag_pipeline - INFO - Processing query: 'Tell me about dairy products like milk.'
+2026-05-06 16:00:36 - rag.rag_pipeline - INFO - Retrieved 3 relevant documents for context.
+2026-05-06 16:00:36 - backend.routes.api - INFO - API called: /ask - Received query: 'Predict weekly sales for store 2'
+2026-05-06 16:00:36 - agents.orchestrator - INFO - Orchestrator received query: Predict weekly sales for store 2
+2026-05-06 16:00:36 - agents.orchestrator - INFO - Query routed to: ml_agent
+2026-05-06 16:00:37 - ml.predict - INFO - Processing prediction request...
+2026-05-06 16:00:37 - ml.predict - INFO - Prediction Result: {'predicted_weekly_sales': 1941571.57, 'is_anomaly': False}
+2026-05-06 16:00:37 - backend.routes.api - INFO - API called: /predict - Prediction generated: 1594429.9503999993
+2026-05-07 09:10:06 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 09:10:06 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 09:10:06 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 09:10:06 - agents.analyst_agent - WARNING - Failed to initialize ChatGroq in AnalystAgent: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-07 09:10:06 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 09:10:06 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 09:10:56 - rag.rag_pipeline - WARNING - Could not initialize ChatGroq. Ensure GROQ_API_KEY is set. Error: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-07 09:10:56 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 09:10:56 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 09:10:56 - ml.predict - INFO - Loading trained models...
+2026-05-07 09:10:56 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 09:10:56 - agents.ml_agent - WARNING - Failed to initialize ChatGroq in MLAgent: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-07 09:10:56 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 09:10:56 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 09:13:25 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 09:13:25 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 09:13:25 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 09:13:25 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 09:13:25 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 09:13:39 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 09:13:39 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 09:13:39 - ml.predict - INFO - Loading trained models...
+2026-05-07 09:13:39 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 09:13:39 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 09:13:39 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 09:18:23 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 09:18:23 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 09:18:23 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 09:18:24 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 09:18:24 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 09:18:37 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 09:18:37 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 09:18:37 - ml.predict - INFO - Loading trained models...
+2026-05-07 09:18:37 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 09:18:37 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 09:18:37 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 09:19:12 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 09:19:12 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 09:19:12 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 09:19:12 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 09:19:12 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 09:19:27 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 09:19:27 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 09:19:27 - ml.predict - INFO - Loading trained models...
+2026-05-07 09:19:27 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 09:19:27 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 09:19:27 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 09:20:10 - backend.routes.api - INFO - API called: /ask - Received query: 'Tell me about dairy products'
+2026-05-07 09:20:10 - agents.orchestrator - INFO - Orchestrator received query: Tell me about dairy products
+2026-05-07 09:20:10 - agents.orchestrator - INFO - Query routed to: rag_agent
+2026-05-07 09:20:10 - rag.rag_pipeline - INFO - Processing query: 'Tell me about dairy products'
+2026-05-07 09:20:12 - rag.rag_pipeline - INFO - Retrieved 3 relevant documents for context.
+2026-05-07 09:20:26 - backend.routes.api - INFO - API called: /ask - Received query: 'Which store has highest sales?'
+2026-05-07 09:20:26 - agents.orchestrator - INFO - Orchestrator received query: Which store has highest sales?
+2026-05-07 09:20:26 - agents.orchestrator - INFO - Query routed to: analyst_agent
+2026-05-07 09:20:39 - backend.routes.api - INFO - API called: /ask - Received query: 'Forecast sales for store 1'
+2026-05-07 09:20:39 - agents.orchestrator - INFO - Orchestrator received query: Forecast sales for store 1
+2026-05-07 09:20:39 - agents.orchestrator - INFO - Query routed to: ml_agent
+2026-05-07 09:20:40 - ml.predict - INFO - Processing prediction request...
+2026-05-07 09:20:40 - ml.predict - INFO - Prediction Result: {'predicted_weekly_sales': 1563786.38, 'is_anomaly': False}
+2026-05-07 09:27:40 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 09:27:40 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 09:27:40 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 09:27:40 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 09:27:40 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 09:28:00 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 09:28:00 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 09:28:00 - ml.predict - INFO - Loading trained models...
+2026-05-07 09:28:00 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 09:28:00 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 09:28:00 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 09:28:49 - backend.routes.api - INFO - API called: /predict - Prediction generated: 1615989.6026999995
+2026-05-07 09:35:19 - backend.routes.api - INFO - API called: /predict - Prediction generated: 1605403.9544
+2026-05-07 09:41:22 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 09:41:22 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 09:41:22 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 09:41:22 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 09:41:22 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 09:41:38 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 09:41:38 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 09:41:38 - ml.predict - INFO - Loading trained models...
+2026-05-07 09:41:38 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 09:41:38 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 09:41:38 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 09:41:41 - backend.routes.api - INFO - API called: /anomaly - Anomaly detection executed. Found 121 anomalies.
+2026-05-07 09:41:42 - backend.routes.api - INFO - API called: /anomaly - Anomaly detection executed. Found 121 anomalies.
+2026-05-07 09:41:50 - backend.routes.api - INFO - API called: /anomaly - Anomaly detection executed. Found 121 anomalies.
+2026-05-07 09:43:38 - backend.routes.api - INFO - API called: /anomaly - Anomaly detection executed. Found 121 anomalies.
+2026-05-07 09:43:47 - backend.routes.api - INFO - API called: /anomaly - Anomaly detection executed. Found 121 anomalies.
+2026-05-07 10:26:25 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 10:26:25 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 10:26:25 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 10:26:25 - agents.analyst_agent - WARNING - Failed to initialize ChatGroq in AnalystAgent: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-07 10:26:25 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 10:26:25 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 10:26:42 - rag.rag_pipeline - WARNING - Could not initialize ChatGroq. Ensure GROQ_API_KEY is set. Error: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-07 10:26:42 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 10:26:43 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 10:26:43 - ml.predict - INFO - Loading trained models...
+2026-05-07 10:26:43 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 10:26:43 - agents.ml_agent - WARNING - Failed to initialize ChatGroq in MLAgent: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-07 10:26:43 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 10:26:43 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 10:32:50 - backend.routes.api - INFO - API called: /anomaly - Anomaly detection executed. Found 121 anomalies.
+2026-05-07 10:32:50 - backend.routes.api - INFO - API called: /anomaly - Anomaly detection executed. Found 121 anomalies.
+2026-05-07 10:38:25 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 10:38:25 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 10:38:25 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 10:38:26 - agents.analyst_agent - WARNING - Failed to initialize ChatGroq in AnalystAgent: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-07 10:38:26 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 10:38:26 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 10:38:41 - rag.rag_pipeline - WARNING - Could not initialize ChatGroq. Ensure GROQ_API_KEY is set. Error: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-07 10:38:41 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 10:38:41 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 10:38:41 - ml.predict - INFO - Loading trained models...
+2026-05-07 10:38:41 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 10:38:41 - agents.ml_agent - WARNING - Failed to initialize ChatGroq in MLAgent: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-07 10:38:41 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 10:38:41 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 10:44:46 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 10:44:46 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 10:44:46 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 10:44:46 - agents.analyst_agent - WARNING - Failed to initialize ChatGroq in AnalystAgent: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-07 10:44:46 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 10:44:46 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 10:45:04 - rag.rag_pipeline - WARNING - Could not initialize ChatGroq. Ensure GROQ_API_KEY is set. Error: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-07 10:45:04 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 10:45:04 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 10:45:04 - ml.predict - INFO - Loading trained models...
+2026-05-07 10:45:04 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 10:45:04 - agents.ml_agent - WARNING - Failed to initialize ChatGroq in MLAgent: 1 validation error for ChatGroq
+__root__
+  Did not find groq_api_key, please add an environment variable `GROQ_API_KEY` which contains it, or pass `groq_api_key` as a named parameter. (type=value_error)
+2026-05-07 10:45:04 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 10:45:04 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 10:48:10 - backend.routes.api - INFO - API called: /ask - Received query: 'twll mw about some diary products'
+2026-05-07 10:48:10 - agents.orchestrator - INFO - Orchestrator received query: twll mw about some diary products
+2026-05-07 10:48:10 - agents.orchestrator - INFO - Query routed to: rag_agent
+2026-05-07 10:48:44 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 10:48:44 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 10:48:44 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 10:48:44 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 10:48:44 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 10:48:59 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 10:48:59 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 10:48:59 - ml.predict - INFO - Loading trained models...
+2026-05-07 10:48:59 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 10:48:59 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 10:48:59 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 10:49:07 - backend.routes.api - INFO - API called: /ask - Received query: 'tell me about diary product'
+2026-05-07 10:49:07 - agents.orchestrator - INFO - Orchestrator received query: tell me about diary product
+2026-05-07 10:49:07 - agents.orchestrator - INFO - Query routed to: rag_agent
+2026-05-07 10:49:07 - rag.rag_pipeline - INFO - Processing query: 'tell me about diary product'
+2026-05-07 10:49:08 - rag.rag_pipeline - INFO - Retrieved 3 relevant documents for context.
+2026-05-07 10:49:17 - backend.routes.api - INFO - API called: /ask - Received query: 'store 1 forecast'
+2026-05-07 10:49:17 - agents.orchestrator - INFO - Orchestrator received query: store 1 forecast
+2026-05-07 10:49:17 - agents.orchestrator - INFO - Query routed to: ml_agent
+2026-05-07 10:49:18 - ml.predict - INFO - Processing prediction request...
+2026-05-07 10:49:18 - ml.predict - INFO - Prediction Result: {'predicted_weekly_sales': 1563786.38, 'is_anomaly': False}
+2026-05-07 10:49:40 - backend.routes.api - INFO - API called: /predict - Prediction generated: 1605403.9544
+2026-05-07 10:49:45 - backend.routes.api - INFO - API called: /anomaly - Anomaly detection executed. Found 121 anomalies.
+2026-05-07 10:49:45 - backend.routes.api - INFO - API called: /anomaly - Anomaly detection executed. Found 121 anomalies.
+2026-05-07 11:45:37 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 11:45:37 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 11:45:37 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 11:45:37 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 11:45:37 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 11:46:22 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 11:46:22 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 11:46:22 - ml.predict - INFO - Loading trained models...
+2026-05-07 11:46:22 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 11:46:22 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 11:46:22 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 11:48:04 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 11:48:04 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 11:48:04 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 11:48:04 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 11:48:04 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 11:48:15 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 11:48:15 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 11:48:15 - ml.predict - INFO - Loading trained models...
+2026-05-07 11:48:15 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 11:48:15 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 11:48:15 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 11:50:01 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 11:50:01 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 11:50:01 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 11:50:01 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 11:50:01 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 11:50:12 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 11:50:12 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 11:50:12 - ml.predict - INFO - Loading trained models...
+2026-05-07 11:50:12 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 11:50:12 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 11:50:12 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 11:51:16 - backend.routes.auth - WARNING - Failed login attempt for: admin@gmail.com
+2026-05-07 11:52:13 - backend.routes.auth - WARNING - Failed login attempt for: admin@gmail.com
+2026-05-07 11:56:51 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 11:56:51 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 11:56:51 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 11:56:51 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 11:56:51 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 11:57:02 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 11:57:02 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 11:57:02 - ml.predict - INFO - Loading trained models...
+2026-05-07 11:57:02 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 11:57:02 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 11:57:02 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 11:57:41 - backend.routes.auth - INFO - New user registered: admin@gmail.com
+2026-05-07 11:58:14 - backend.routes.auth - INFO - Successful login for: admin@gmail.com
+2026-05-07 11:59:12 - backend.routes.auth - INFO - Successful login for: admin@gmail.com
+2026-05-07 12:00:04 - backend.routes.auth - INFO - Successful login for: admin@gmail.com
+2026-05-07 12:00:14 - backend.routes.api - INFO - API called: /anomaly - Anomaly detection executed. Found 121 anomalies.
+2026-05-07 12:00:15 - backend.routes.api - INFO - API called: /anomaly - Anomaly detection executed. Found 121 anomalies.
+2026-05-07 12:00:34 - backend.routes.auth - INFO - Successful login for: admin@gmail.com
+2026-05-07 14:37:14 - backend.routes.api - INFO - ML Models loaded successfully in API routes.
+2026-05-07 14:37:14 - agents.orchestrator - INFO - Initializing Agent Orchestrator and sub-agents...
+2026-05-07 14:37:14 - agents.analyst_agent - INFO - AnalystAgent loading data from C:\Users\gsrav\OneDrive\Desktop\project\data\processed\cleaned_walmart.csv
+2026-05-07 14:37:14 - agents.rag_agent - INFO - Initializing RAG Agent...
+2026-05-07 14:37:14 - rag.rag_pipeline - INFO - Initializing HuggingFace Embeddings (all-MiniLM-L6-v2)...
+2026-05-07 14:38:06 - rag.rag_pipeline - INFO - Loading FAISS vector store from C:\Users\gsrav\OneDrive\Desktop\project\rag\faiss_index
+2026-05-07 14:38:07 - agents.ml_agent - INFO - MLAgent loading models from C:\Users\gsrav\OneDrive\Desktop\project\ml\models
+2026-05-07 14:38:07 - ml.predict - INFO - Loading trained models...
+2026-05-07 14:38:07 - ml.predict - INFO - Models loaded successfully.
+2026-05-07 14:38:07 - agents.orchestrator - INFO - All agents initialized successfully.
+2026-05-07 14:38:07 - backend.routes.api - INFO - Agent Orchestrator initialized in API routes.
+2026-05-07 14:38:08 - backend.routes.auth - INFO - Successful login for: admin@gmail.com
+2026-05-07 14:38:50 - backend.routes.api - INFO - API called: /ask - Received query: 'what will be the next week sales for store 3'
+2026-05-07 14:38:50 - agents.orchestrator - INFO - Orchestrator received query: what will be the next week sales for store 3
+2026-05-07 14:38:50 - agents.orchestrator - INFO - Query routed to: analyst_agent
+2026-05-07 14:39:12 - backend.routes.api - INFO - API called: /ask - Received query: 'what will be the next week sales for store 1'
+2026-05-07 14:39:12 - agents.orchestrator - INFO - Orchestrator received query: what will be the next week sales for store 1
+2026-05-07 14:39:12 - agents.orchestrator - INFO - Query routed to: analyst_agent
+2026-05-07 14:39:28 - backend.routes.api - INFO - API called: /ask - Received query: 'tell me about diary product'
+2026-05-07 14:39:28 - agents.orchestrator - INFO - Orchestrator received query: tell me about diary product
+2026-05-07 14:39:28 - agents.orchestrator - INFO - Query routed to: rag_agent
+2026-05-07 14:39:28 - rag.rag_pipeline - INFO - Processing query: 'tell me about diary product'
+2026-05-07 14:39:28 - rag.rag_pipeline - INFO - Retrieved 3 relevant documents for context.
+2026-05-07 14:43:19 - backend.routes.api - INFO - API called: /ask - Received query: 'forecast the sales for store 1'
+2026-05-07 14:43:19 - agents.orchestrator - INFO - Orchestrator received query: forecast the sales for store 1
+2026-05-07 14:43:19 - agents.orchestrator - INFO - Query routed to: ml_agent
+2026-05-07 14:43:20 - ml.predict - INFO - Processing prediction request...
+2026-05-07 14:43:20 - ml.predict - INFO - Prediction Result: {'predicted_weekly_sales': 1563786.38, 'is_anomaly': False}
+2026-05-07 14:47:04 - backend.routes.api - INFO - API called: /ask - Received query: 'tell me about pantry'
+2026-05-07 14:47:04 - agents.orchestrator - INFO - Orchestrator received query: tell me about pantry
+2026-05-07 14:47:04 - agents.router - INFO - No specific keywords matched for query: 'tell me about pantry'. Defaulting to Analyst Agent.
+2026-05-07 14:47:04 - agents.orchestrator - INFO - Query routed to: analyst_agent
